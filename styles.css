@@ -1,0 +1,311 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.info-text {
+    text-align: left;
+    font-size: 10pt;
+    overflow-y: scroll;
+}
+.info-text li {
+    text-align: left;
+    padding: 4px;
+}
+
+.header {
+ font-size: large;   
+ text-align: center;
+ padding: 15px;
+ margin-bottom: 0px;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 20vh;
+    padding-left: 40vw;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 360px;
+}
+
+.popup-content {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    padding-top: 2px;
+    border-radius: 10px;
+}
+
+#input-container {
+    justify-items: center;
+}
+
+#add-button{
+width: 20px;
+height: 20px;
+margin-left: -5px;
+}
+
+.remove-button {
+    width: 20px;
+    height: 20px;
+}
+
+#listview {
+box-sizing: border-box;
+list-style: none;
+text-align: left;
+margin-left: 10px;
+}
+
+.listdiv{
+padding-top: 0px;
+height: 555px;
+overflow-y:scroll;
+}
+
+.nodediv{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+
+}
+
+#listview li:nth-child(odd) {
+    background: rgb(240,240,240);
+  }
+
+  #listview li {
+    width: 100%;
+    padding: 10px;
+  }
+
+#list-module {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 20px;
+    width: 18%;
+}
+
+#name {
+    height: 20px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#name::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#submitbutton {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    border-radius: 6px;
+    background-color: rgb(143, 143, 143);
+}
+
+.radio {
+    display: inline-flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#nodebutton {
+    border: none;
+    padding: 10px;
+    margin-left: 52px;
+    border-radius: 10px;
+    background-color: rgb(143, 143, 143);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+    transition: 0.1s;
+    width: 60%;
+}
+
+#nodebutton:hover {
+    background-color: rgb(90, 90, 90);
+}
+
+#information {
+    position: fixed;
+    z-index: 1;
+    padding-top: 13vh;
+    padding-left: 50vw;
+    top: 0px;
+    left: -180px;
+    width: 600px;
+    height: 500px;
+}
+
+.information-content {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    padding-top: 2px;
+    border-radius: 10px;
+    height: 500px;
+}
+
+#scroll {
+    height: 70%;
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+}
+
+.year-input {
+    background-color: rgb(220, 220, 220);
+    height: 14px;
+    width:120px;
+    border: none;
+    padding: 3px;
+    margin-left: 12px;
+    margin-right: 0;
+    margin-top: 2px;
+    border-radius: 5px;;
+}
+
+#add-button {
+border: none;
+background: none;
+font-size: 12pt;
+justify-content: center;
+}
+
+.remove-button {
+border: none;
+background: none;
+font-size: 11pt;
+justify-content: center;
+color: rgb(209, 0, 0);
+}
+
+#close {
+    position: relative;
+    margin-left: 500px;
+    top: 10px;
+    right: 0px;
+    border: none;
+    background-color: rgb(143, 143, 143);
+    padding: 4px;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+#close:hover {
+    background-color: rgb(90, 90, 90);
+}
+
+#create {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: -20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    border-radius: 6px;
+    background-color: rgb(143, 143, 143);
+}
+
+#create:hover {
+    background-color
+    : rgb(90, 90, 90);
+}
+
+#close2 {
+    margin-top: 6px;
+    margin-left: 206px;
+    border: none;
+    background-color: rgb(143, 143, 143);
+    padding: 4pow tox;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+#node-info {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    padding-top: 20vh;
+    padding-left: 40vw;
+    top: 0px;
+    left: 0px;
+    height: 700px;
+    width: 300px;
+}
+
+.node-info-content {
+    text-align: center;
+    overflow-y: scroll;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    padding-top: 2px;
+    border-radius: 10px;
+}
+
+#openInfo {
+    position: absolute;
+    font-size: large;
+    text-align: center;
+    line-height: 8px; 
+    margin: 10px;
+    right: 0;
+    z-index: 4;
+    padding: 8px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.nodetext {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+#openInfo:hover {
+    cursor: pointer;
+}
+
+#imagebutton {
+    padding: 30px;
+}
+
+#description {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@antv/x6/dist/x6.js"></script>
+    <script type="module" src=" script.js"></script>
+    <link rel="stylesheet " href="styles.css ">
+    <title>Thesis</title>
+    <meta charset="UTF-8 ">
+</head>
+
+
+<body>
+    <div id="list-module">
+        <div class="content">
+            <h1 contenteditable="true" class="header">Project Title …</h1>
+            <div class="listdiv">
+            <list id="listview">
+            </list>
+            </div>
+        </div>
+       <div class="nodediv">
+        <button id="nodebutton">Add new node</button>
+        </div>
+    </div>
+
+    <div id="container">
+    </div>
+    <button id="openInfo">i</button>
+</body>
+
+
+
+<div id="node-info" style="display: none;">
+    <div class="node-info-content">
+        <!-- Content will be dynamically updated -->
+    </div>
+</div>
+
+<div id="information">
+    <div class="information-content">
+        <button id="close">Close</button>
+        <h1>Instructions</h1>
+        <div id="scroll">
+        <ul class = 'info-text'>
+            <li>Optional: Begin by generating a timeline using the input fields below.</li>
+            <li>To create a new node, click the button in the lower left corner after closing this window.</li>
+            <li>To draw connections between nodes, or clusters of nodes, click and drag from one of the "ports" (circles) on either side of the node.</li>
+            <li>To resize a node, click it once and drag the handles of the now visible transformation box.</li>
+            <li>To delete a node, either press the "X" button visible when hovering the node, or select the node and press "Backspace".</li>
+<li>To delete connectors, click the connector once and press "Backspace".</li>
+        </ul>
+        <div id="input-container">
+            <div class="input-group">
+                <input class="year-input" type="text" placeholder="Year/Date">
+                <button id="add-button">+</button>
+            </div>
+        </div>
+       
+    </div>
+        <button id="create">Generate</button>
+    </div>
+
+</div>
+
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <div class="radio">
+            <input id="person" type="radio" name="1" value="person">
+            <label for="person">Person</label><br>
+            <input id="event" type="radio" name="1" value="place">
+            <label for="place">Place</label><br>
+            <input id="event" type="radio" name="1" value="event">
+            <label for="event">Event</label><br>
+        </div>
+        <input type="text" id="name" placeholder="Name / Title" autocomplete="off"></input><br>
+        <input type="file" id="imagebutton" accept="image"></input><br>
+        <textarea id="description" placeholder="Write your description here …"></textarea>
+        <button id="submitbutton">Submit</button>
+    </div>
+
+</html>
